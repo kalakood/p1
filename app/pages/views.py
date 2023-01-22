@@ -9,3 +9,6 @@ def homePageView(request):
 
 class HView(TemplateView):
     template_name = "home.html"
+
+class AboutPageView(TemplateView):
+    template_name = "about.html"
