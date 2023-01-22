@@ -1,0 +1,9 @@
+
+services:
+  web: 
+    build:
+      context: app
+    ports: 
+      - '8181:8000'
+    volumes:
+      - ./app:/usr/src/app
