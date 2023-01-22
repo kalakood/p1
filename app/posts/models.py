@@ -1,5 +1,5 @@
 from django.db import models
 
-class Post(modles.Model):
-  text = models.Textfield()
+class Post(models.Model):
+  text = models.TextField()
   
