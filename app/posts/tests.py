@@ -4,7 +4,7 @@ from django.urls import reverse
 
 from .models import Post
 
-class PostTetst(TestCase):
+class PostTest(TestCase):
   @classmethod
   def setUpTestData(cls):
     cls.post = Post.objects.create(text="This is a test!")
