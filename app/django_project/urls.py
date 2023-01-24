@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("pages.urls")),
     path('listika/', include("posts.urls")),
+    path('blog/', include("blog.urls")),
 ]

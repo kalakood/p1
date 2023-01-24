@@ -1,3 +1,6 @@
+# K6ik on h2kk... peaasi et $$ tuleb
+# ma ei oska midagi tegelt
+# Aga palgake finbitest Pavel Sevakin, see vend teeb JAVA + SQL
 import sys
 from django.test import TestCase
 from django.urls import reverse
@@ -8,7 +11,6 @@ class PostTest(TestCase):
   @classmethod
   def setUpTestData(cls):
     cls.post = Post.objects.create(text="This is a test!")
-    #sys.stderr.write(repr(object_to_print) + '\n')
     sys.stderr.write("setup done!\n")
 
   def test_model_content(self):
@@ -23,3 +25,5 @@ class PostTest(TestCase):
     self.assertEqual(response.status_code, 200)
     self.assertTemplateUsed(response, "listika.html")
     self.assertContains(response, "This is a test!")
+    #sys.stderr.write("K6ik testid tehtud. t88tab\n")
+    #sys.stderr.write(repr(object_to_print) + '\n')
